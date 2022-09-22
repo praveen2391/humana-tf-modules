@@ -1,8 +1,3 @@
-variable "name" {
-  type = string
-  description = "The resource group name"
-}
-
 variable "location" {
   type = string
   description = "The location where the resource needs to be created"
