@@ -1,11 +1,5 @@
-resource "azurerm_resource_group" "resource_group" {
-  name     = "${terraform.workspace}-${var.project}-${var.zone}-${var.lob}-${var.location}-rg"
-  location = var.location
-
-  tags = {
-    environment       = terraform.workspace
-    project           = var.project
-    lob               = var.lob
-    zone              = var.zone
-  }
+resource "azurerm_storage_container" "container" {
+  name                  = var.container_name
+  storage_account_name  = var.storage_account_name
+  container_access_type = var.container_access_type
 }

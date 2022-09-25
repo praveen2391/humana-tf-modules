@@ -1,7 +1,7 @@
 output "name" {
-  value = azurerm_resource_group.resource_group.name
+  value = azurerm_storage_container.container.name
 }
 
-output "location" {
-  value = azurerm_resource_group.resource_group.location
+output "id" {
+  value = azurerm_storage_container.container.id
 }

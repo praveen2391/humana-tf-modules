@@ -1,19 +1,11 @@
-variable "location" {
-  type = string
-  description = "The location where the resource needs to be created"
+variable "container_access_type" {
+  default = "private"
 }
 
-variable "project" {
-  type = string
-  description = "Name of the project"
+variable "container_name" {
+  description = "Storage account container name"
 }
 
-variable "lob" {
-    type = string
-    ddescription = "Name of Line of Bussiness"  
-}
-
-variable "zone" {
-    type = string
-    description = "value"  
+variable "storage_account_name" {
+  description = "Name of storage account where the container needs to be created"
 }
