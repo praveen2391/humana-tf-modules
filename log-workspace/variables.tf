@@ -10,7 +10,7 @@ variable "project" {
 
 variable "lob" {
     type = string
-    ddescription = "Name of Line of Bussiness"  
+    description = "Name of Line of Bussiness"  
 }
 
 variable "zone" {
