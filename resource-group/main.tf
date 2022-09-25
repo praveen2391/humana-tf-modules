@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "resource_group" {
-  name     = "${terraform.workspace}-${var.project}-${var.zone}-${var.lob}-${var.location}-rg"
+  name     = "${terraform.workspace}-${var.lob}-${var.project}-${var.zone}-${var.location}-rg"
   location = var.location
 
   tags = {
