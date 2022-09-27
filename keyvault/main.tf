@@ -17,7 +17,7 @@ resource "azurerm_key_vault" "keyvault" {
   enabled_for_disk_encryption = var.enabled_for_disk_encryption
   enabled_for_deployment      = var.enabled_for_deployment
   enabled_for_template_deployment = var.enabled_for_template_deployment
-  sku                             = var.sku
+  sku_name                        = var.sku
 
   tags = {
     "environment" = "${terraform.workspace}"
