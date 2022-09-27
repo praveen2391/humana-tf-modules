@@ -1,7 +1,11 @@
 output "name" {
-  value = azurerm_resource_group.resource_group.name
+  value = azurerm_key_vault.keyvault.name
 }
 
-output "location" {
-  value = azurerm_resource_group.resource_group.location
+output "id" {
+  value = azurerm_key_vault.keyvault.id
+}
+
+output "vault_uri" {
+  value = azurerm_key_vault.keyvault.vault_uri
 }
