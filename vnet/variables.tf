@@ -23,7 +23,7 @@ variable "resource_group_name" {
   description = "in which resource group the vnet needs to be created"
 }
 
-variable "vnet_cidr" {
+variable "address_space" {
   description = "CIDR size to use for Vnet"
 }
 
